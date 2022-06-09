@@ -6,7 +6,7 @@ body {
 
 .titulo {
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     margin-top: 15px;
     text-shadow: -2px -1px 10px rgb(0, 0, 0);
 
@@ -155,7 +155,7 @@ header {
     text-align: center;
     font-size: 30px;
     margin-top: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 .navfooter {
     background-color: black;
@@ -164,6 +164,7 @@ header {
     display: flex;
     position:fixed ;
     bottom: 10px;
+    margin-left: 10px;
 }
 .divredes {
     position:fixed;
@@ -403,7 +404,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     display: block;
-}    
+}
 .fechz {
     font-size: 30px;
     margin-top: 1%;
@@ -988,9 +989,11 @@ footer {
             width: 300px;
         }
         .prod_bk {
+            margin: 7%;
             border: rgb(168, 168, 168) 1px solid;
             background-color: #ebebebb7;
         }
+        
         
     }
 @media (max-width: 460px)
