@@ -13,9 +13,12 @@ body {
 .titu {
     text-decoration: none;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: #ededed;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 38px;
+}
+.titu:hover {
+    color: #ffffff;
 }
 
 header {
@@ -70,7 +73,8 @@ header {
     margin-bottom: 10px;
 }
 .texttt {
-    padding-top: 1px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     font-size: 19px;
     font-weight: 500 ; 
     margin: 0px;
@@ -100,56 +104,16 @@ header {
     margin-top: 1px;
     margin-bottom: 10px;
 }
-.prod_cam {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+.stadium {
+    padding: 1%
 }
-.prod_cam a {
-    text-decoration: none;
-    text-align: center;
-    color: #000;
+.olds {
+    font-size: 25px;
 }
-.camisetaspic {
-    width: 300px;
+.hirsc {
+    margin-top: auto;
+    margin-bottom: auto;
 }
-.detallecam {
-    padding: 0px 5%;
-    font-weight: 500;
-}
-
-.cam1 {
-    background-color: rgba(156, 156, 156, 0.466);
-    border-radius: 4%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 20px 20px;
-    width: 390px;
-}
-.cam2 {
-    margin: 5px;
-    background-color: rgba(156, 156, 156, 0.87);
-    border-radius: 4%;
-    display: flex;
-    align-content: center;
-    margin: 20px 20px;
-    width: 390px;
-}
-.ult {
-    grid-column-start: 2;
-}
-
-/*A partir de aca son los hover*/
-.cam1:hover {
-    background-color: rgba(156, 156, 156, 0.856);
-    border-radius: 4%;
-}
-.cam2:hover {
-    background-color: rgba(156, 156, 156, 0.466);
-    border-radius: 4%;
-}
-
 .dest {
     text-align: center;
     font-size: 30px;
@@ -165,20 +129,12 @@ header {
     bottom: 10px;
     margin-left: 10px;
 }
-.divredes {
-    position:fixed;
-    padding-right: 5px;
-    left: 350px;
-    bottom: 10px;
-}
-.divredez {
-    position:fixed;
-    padding-right: 5px;
-    margin: 10px;
-    bottom: 10px;
-}
 .redesnav {
+    align-items: center;
+    align-content: center;
     padding-right: 7%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .redes {
     margin-top: 10px;
@@ -433,7 +389,8 @@ header {
     color: #000;
 }
 .hirschi_tit {
-    margin-top: 10px;
+    margin-top: 10px; 
+    font-size: 23px;
 }
 .pics {
     width: 400px;
@@ -448,6 +405,9 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.textprod {
+    text-decoration: none;
 }
 .copas {
     background-image: url(../cimg/libertadores.png);
@@ -523,17 +483,6 @@ footer {
         .navfooter {
             width: 200px;
         }
-        .divredes {
-            left: 240px;
-        }
-        .redes {
-            display: flex;
-            flex-direction: row;
-            width: 20px;
-        }
-        .camisetaspic {
-            width: 300px;
-        }
         .gastro 
         {
             width: 700px;
@@ -544,28 +493,6 @@ footer {
     }
 @media (max-width: 1750px) 
     {
-        .prod_cam {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            justify-items: center;
-        }
-        .ult {
-            grid-column-start: auto;
-        }
-        .ulti {
-            grid-column-start: 2;
-        }
-        .cam1 {
-            display: flex;
-            align-content: center;
-            margin: 20px 50px;
-        }
-        .cam2 {
-            margin: 5px;
-            display: flex;
-            align-content: center;
-            margin: 20px 50px;
-        }
         .gastro 
         {
             width: 500px;
@@ -582,63 +509,10 @@ footer {
     }
 @media (max-width: 1500px)
     {
-        .prod_cam {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            justify-items: center;
-        }
-        .ult {
-            grid-column-start: auto;
-        }
-        .ulti {
-            grid-column-start: 2;
-        }
-        .cam1 {
-            display: flex;
-            align-content: center;
-            margin: 5px;
-        }
-        .cam2 {
-            margin: 5px;
-            display: flex;
-            align-content: center;
-            margin: 5px;
-        }
-        .camisetaspic {
-            width: 250px;
-        }
         .inde_tit_parrafo {
             margin-right: 200px;
             margin-left: 200px;
         }
-    }
-@media (max-width: 1250px) 
-    {
-    .prod_cam {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-    }
-    .ult {
-        grid-column-start: auto;
-    }
-    .ulti {
-        grid-column-start: auto;
-    }
-    .cam1 {
-        display: flex;
-        align-content: center;
-        margin: 5px;
-    }
-    .cam2 {
-        margin: 5px;
-        display: flex;
-        align-content: center;
-        margin: 5px;
-    }
-    .camisetaspic {
-        width: 250px;
-    }
     }
 @media (max-width: 1192px) 
     {
@@ -797,35 +671,7 @@ footer {
         padding-left: 0px;
     }
     }
-@media (max-width: 830px) 
-    {
-    .prod_cam {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
-    .ult {
-        grid-column-start: auto;
-    }
-    .ulti {
-        grid-column-start: auto;
-    }
-    .cam1 {
-        width: 330px;
-        display: flex;
-        align-content: center;
-        margin: 5px;
-    }
-    .cam2 {
-        width: 330px;
-        display: flex;
-        align-content: center;
-        margin: 5px;
-    }
-    .camisetaspic {
-        width: 250px;
-    }
-    }
+
 @media (max-width: 790px)
     {   
         .titu 
@@ -916,18 +762,6 @@ footer {
         .navfooter {
             width: 100px;
         }
-        
-        .divredez {
-            display: flex;
-            margin: 0px;
-        }
-        .divredes {
-            left: 10px;
-            height: 150px;
-        }
-        .redes {
-            width: 20px;
-        }
         .pics {
             width: 330px;
         }
@@ -1009,9 +843,6 @@ footer {
         }
         .pics {
             width: 320px;
-        }
-        .camisetaspic {
-            width: 230px;
         }
         .hirschi_tit {
             font-size: 12x;
